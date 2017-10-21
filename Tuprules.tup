@@ -1,0 +1,6 @@
+CFLAGS += -Wall -Werror -Wextra -pedantic -O2 -fPIC
+
+!cc = |> gcc $(CFLAGS) $(CCFLAGS) -c %f -o %o |> %B.o
+!ldcc = |> gcc $(LDFLAGS) -o %o %f |>
+!cshared = |> gcc -shared -o %o %f |>
+!ar = |> ar rcs %o %f |>

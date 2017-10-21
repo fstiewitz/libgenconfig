@@ -1,3 +1,6 @@
+# TUP files
+.tup/
+
 # Prerequisites
 *.d
 
